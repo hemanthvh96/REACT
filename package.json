@@ -1,0 +1,15 @@
+{
+  "name": "react-concepts",
+  "version": "1.0.0",
+  "description": "CHALLENGE YOURSELF",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hemanth Vennelakanti",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint-config-prettier": "^8.8.0",
+    "parcel": "^2.8.3"
+  }
+}
