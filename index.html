@@ -16,25 +16,6 @@
       crossorigin
       src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
     ></script>
-    <script>
-      const li1 = React.createElement(
-        "li",
-        { id: "1", name: "angular" },
-        "Angular"
-      );
-      const li2 = React.createElement(
-        "li",
-        { id: "1", name: "React" },
-        "React"
-      );
-      const ul = React.createElement("ul", { id: "my-courses-list", type: 1 }, [
-        li1,
-        li2,
-      ]);
-      const div = React.createElement("div", { id: "my-courses" }, [ul]);
-
-      const root = ReactDOM.createRoot(document.getElementById("root"));
-      root.render(div);
-    </script>
+    <script type="module" src="App.js"></script>
   </body>
 </html>
