@@ -1,24 +1,25 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-/* WITHOUT JSX, IT WOULD BE HARD TO WORK ON HTML */
+// REACT ELEMENT
+const headerEl = <h1>I'm Header Element</h1>;
 
-const li1 = React.createElement("li", { id: "1", key: "1" }, "Angular");
-const li2 = React.createElement("li", { id: "1", key: "2" }, "React");
-const ul = React.createElement("ul", { id: "my-courses-list", type: 1 }, [
-  li1,
-  li2,
-]);
-const div = React.createElement("div", { id: "my-courses" }, [ul]);
+// REACT - FUNCTIONAL COMPONENTS
+const SearchComponent = () => <div>This is placeholder for Search Bar</div>;
+const NavBarComponent = () => <div>This is placeholder for Nav Bar</div>;
 
-/* WITH JSX, IT'S EASY TO WRITE THE CODE */
-const single_line_heading = <h1> Hello World !</h1>;
-const multi_line_heading = (
+const HeaderComponent = () => (
   <div>
-    <h2>HEY YOU ! WHAT'S UP ?</h2>
-    <h3>All Good ?</h3>
+    <h1>Hello Mate !</h1>
+    <h2>How's your day going on</h2>
+    {headerEl}
+    {SearchComponent()}
+    <NavBarComponent />
   </div>
 );
 
+// FUNCTIONAL COMPONENT INSIDE FUNCNTIONAL COMPONENT
+// THERE ARE MULTIPLE WAYS OF WRITING THEM: SEE 16 AND 17 LINES
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(div);
+root.render(<HeaderComponent />);
